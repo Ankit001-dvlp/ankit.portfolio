@@ -1,0 +1,129 @@
+/* Hover effect with zoom and shadow */
+.group:hover img {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Rounded corners and box shadows for the images */
+img {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay effect on hover with gradient */
+.group:hover .bg-gradient-to-t {
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Smooth scaling transition on hover */
+.transform {
+    transition: transform 0.5s ease;
+}
+
+/* Additional shadow for a lifted effect */
+.shadow-lg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mt-[-200px] {
+        margin-top: 0;
+    }
+}
+
+/* Border outline with a yellow color */
+img {
+    border: 4px solid #f1c40f; /* Yellow border */
+    position: relative;
+}
+
+/* Scroll line animation (LED-like effect) */
+.outline-animation {
+    position: relative;
+    border: 4px solid transparent;
+    box-shadow: 0 0 0 4px #f1c40f inset; /* LED glowing effect */
+    animation: scroll-line 3s infinite linear;
+}
+
+/* Keyframes for the scroll line animation */
+@keyframes scroll-line {
+    0% {
+        box-shadow: 0 0 0 4px #f1c40f inset;
+    }
+    50% {
+        box-shadow: 0 0 15px 10px rgba(241, 196, 15, 0.5) inset;
+    }
+    100% {
+        box-shadow: 0 0 0 4px #f1c40f inset;
+    }
+}
+
+    .max-width {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .grid {
+        display: grid;
+        gap: 20px;
+    }
+
+    .qualification-box, .experience-box {
+        background-color: #070640;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.7s ease-in-out;
+        transform-style: preserve-3d;
+    }
+
+    .qualification-box:hover, .experience-box:hover {
+        transform: rotateX(15deg) rotateY(15deg);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .qualification-content p, .experience-content p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .qualification-content li, .experience-content li {
+        list-style-type: none;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    .qualification-box a {
+        color: #f1c40f;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .qualification-box a:hover {
+        color: #FFFF00;
+    }
+
+    .text-xl {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .rounded-lg {
+        border-radius: 15px;
+    }
+
+    .shadow-lg {
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .hover\:rotate-3d-x-15:hover {
+        transform: rotateX(15deg);
+    }
+
+    .hover\:rotate-3d-y-15:hover {
+        transform: rotateY(15deg);
+    }
+
+
